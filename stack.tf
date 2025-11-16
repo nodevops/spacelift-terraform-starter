@@ -4,7 +4,7 @@ resource "spacelift_stack" "managed" {
   name        = "Managed stack"
   description = "Your first stack managed by Terraform"
 
-  repository   = "terraform-starter"
+  repository   = "spacelift-terraform-starter"
   branch       = "main"
   project_root = "managed-stack"
 
@@ -65,7 +65,7 @@ data "spacelift_ips" "ips" {}
 # Note how we explicitly set the "write_only" bit for this file to "false".
 # Thanks to that, you can download the file from the Spacelift GUI.
 #
-# You can read more about mounted files here: 
+# You can read more about mounted files here:
 #
 # https://docs.spacelift.io/concepts/environment#mounted-files
 resource "spacelift_mounted_file" "stack-plaintext-file" {
