@@ -1,0 +1,7 @@
+[env]
+
+YOLO = "plouf"
+X_SPACELIFT = "ouep"
+
+[tools]
+opentofu = "1.10"
